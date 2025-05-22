@@ -1,0 +1,12 @@
+# Placeholder file
+# .dockerignore
+__pycache__
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+*.log
+checkpoints/
+logs/
