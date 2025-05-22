@@ -1,9 +1,9 @@
 # Placeholder file
 # pipeline/prediction_pipeline.py
 import torch
-from models import TextEncoder, PosteriorEncoder, Flow, DurationPredictor, HiFiGANGenerator
-from utils.audio import save_audio
-from utils.text import text_to_phonemes
+from vits_nepali.models import TextEncoder, PosteriorEncoder, Flow, DurationPredictor, HiFiGANGenerator
+from vits_nepali.utils.audio import save_audio
+from vits_nepali.utils.text import text_to_phonemes
 import yaml
 import logging
 import os

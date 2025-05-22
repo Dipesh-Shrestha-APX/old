@@ -1,4 +1,29 @@
-# Placeholder file
+# # Placeholder file
+# # configs/config.yaml
+# # Model hyperparameters
+# n_vocab: 100
+# embed_dim: 192
+# hidden_channels: 192
+# n_layers: 6
+# n_heads: 2
+# n_flow_layers: 4
+# upsample_rates: [8, 8, 2, 2]
+# periods: [2, 3, 5, 7, 11]
+
+# # Training settings
+# batch_size: 16
+# lr: 0.0002
+# epochs: 1000
+# data_dir: "data/dataset/"  # Base directory for audio files
+# manifest_file: "data/csv/train.csv"  # Training CSV
+# val_manifest_file: "data/csv/val.csv"  # Validation CSV
+# checkpoint_dir: "checkpoints/"
+# log_dir: "logs/"
+
+# # Audio settings
+# sample_rate: 16000
+# n_mels: 80
+
 # configs/config.yaml
 # Model hyperparameters
 n_vocab: 100
@@ -14,12 +39,13 @@ periods: [2, 3, 5, 7, 11]
 batch_size: 16
 lr: 0.0002
 epochs: 1000
-data_dir: "data/dataset/"  # Base directory for audio files
-manifest_file: "data/csv/train.csv"  # Training CSV
-val_manifest_file: "data/csv/val.csv"  # Validation CSV
+data_dir: "vits_nepali/data/dataset/"  # Base directory for audio files
+manifest_file: "vits_nepali/data/csv/train_phonemes.csv"  # Changed to preprocessed CSV
+val_manifest_file: "vits_nepali/data/csv/val_phonemes.csv"  # Changed to preprocessed CSV
 checkpoint_dir: "checkpoints/"
 log_dir: "logs/"
 
 # Audio settings
 sample_rate: 16000
 n_mels: 80
+hop_length: 256  # Added for PredictionPipeline

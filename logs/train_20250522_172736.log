@@ -1,0 +1,1 @@
+2025-05-22 17:27:36,797 [ERROR] Failed to initialize TrainingPipeline: Torch not compiled with CUDA enabled

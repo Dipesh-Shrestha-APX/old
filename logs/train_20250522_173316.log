@@ -1,0 +1,1 @@
+2025-05-22 17:33:19,456 [ERROR] Failed to initialize TrainingPipeline: [Errno 2] No such file or directory: 'data/csv/train_phonemes.csv'
